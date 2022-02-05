@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    /* overflow: hidden; */
+}
+
+.form{
+    width: 50%;
+    display: inline-block;
+    margin-right:-4px;
+    
+}
+section{
+    margin: 20px;
+    position: relative;
+    overflow-y: auto;
+    height: 620px;
+    box-shadow: 5px 5px 5px 5px gray;
+}
+img{
+    width: 50%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    height:600px;
+    float: right;
+}
+#b1,#b2{
+    display: inline-block;
+    width: 80px;
+    border-radius: 4px;
+    height: 30px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(175, 102, 243);
+}
+#b1{
+    margin-left: 40%;
+}
+#b2{
+    margin-left: 40px;
+}
+input{
+    width: 300px;
+    border: none;
+    background-color: white;
+    border-bottom: 1px solid gray;
+    height: 30px;
+}
+input, label, h3, #district{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#district{
+    height: 50px;
+}
+article h3{
+    font-family: Helvetica ;
+    letter-spacing: 2px;
+}
+.first, .second{
+    display: inline-block;
+}
+form{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+input:focus{
+    outline: none !important;
+    border: none;
+    border-bottom:1px solid black;
+}
+.house{
+    display: inline-block;
+}
+.street{
+    display: inline-block;
+}
+input[name^="option"]{
+    width: 20px;
+    height: 20px;
+}

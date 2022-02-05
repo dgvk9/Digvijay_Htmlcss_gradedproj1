@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <section>
+        <div class="form">
+            <form action="success.html" id="lab-form">
+                <article>
+                    <h2>1. Your Contact Details</h2>
+                <div class="main">
+                    <div class="first">
+                        <h3>Full Name</h3>
+                        <input type="text" title="name" required spellcheck="false">
+                        <h3>Contact Number</h3>
+                        <input type="number" min="6000000000" title="number" required max="999999999"/>
+                    </div>
+                    <div class="second">
+                        <h3>Patient ID if exists</h3>
+                        <input type="number">
+                        <h3>Email</h3>
+                        <input type="email" required>
+                    </div>
+                </div>
+                </article>
+                <article>
+                    <h2>2. Address</h2>
+                    <div class="house">
+                        <h3>House No#</h3>
+                        <input type="text" required>
+                    </div>
+                    <div class="street">
+                        <h3>Street</h3>
+                        <input type="text" name="" id="" required>
+                    </div>
+                    <div>
+                        <h3>Area</h3>
+                        <input type="text" required>
+                    </div>
+                    <div>
+                        <h3>District</h3>
+                        <select name="district" id="district">   
+                            <option value="">Please select the district:</option>
+                            <option value="bangalore_rural">Bangalore Rural</option>
+                            <option value="bangalore_urban">Bangalore Urban</option>
+                            <option value="ramnagara">Ramnagara</option>
+                            <option value="mysore">Mysuru</option>
+                        </select>
+                    </div>      
+                </article>
+                <article>
+                    <h2>3. Choose the Test Type:</h2>
+                    <p>**Please check one box without fail**</p>
+                    <input type="checkbox" id="c1" name="option1" value="cbc">
+                    <label for="c1">CBC</label>
+                    <br>
+                    <input type="checkbox" id="c2" name="option2" value="urine">
+                    <label for="c2">Complete Urine</label>
+                    <br>
+                    <input type="checkbox" id="c3" name="option3" value="lipid">
+                    <label for="c3">Lipid Profile</label>
+                    <br>
+                    <input type="checkbox" id="c4" name="option4" value="tsh">
+                    <label for="c4">Thyroid Stimulating Hormone(TSH)</label>
+                    <br>
+                    <input type="checkbox" id="c5" name="option5" value="Glucose">
+                    <label for="c5">Glucose Test</label>
+                </article>
+                <article>
+                    <h2>4. Do you want a hard copy of the report also?</h2>
+                    <input type="radio" id="yes" name="option" value="yes" required>
+                    <label for="yes">Yes</label>
+                    <br>
+                    <input type="radio" id="no" name="option" value="no">
+                    <label for="no">No</label>
+                </article>
+                <article>
+                    <h2>5. Select Your Comfortable Date and Time</h2>
+                    <input type="date" name="" id="">
+                    <input type="time" name="" id="">
+                </article>
+            </form>
+        </div>
+        
+        <img src="Images/Lab-Test/lab-test.jpg" alt="lab">
+
+    </section>
+    <button id="b1" type="submit" form="lab-form">Submit</button>
+    <button id="b2" type="reset" form="lab-form">Reset</button>
+</body>
+</html>
